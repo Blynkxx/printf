@@ -11,7 +11,7 @@
  * Return: Number of chars printed
  */
 int print_char(va_list types, char buffer[],
-		int flags, int width, int precision, int size)
+	int flags, int width, int precision, int size)
 {
 	char c = va_arg(types, int);
 
@@ -139,7 +139,7 @@ int print_int(va_list types, char buffer[],
 	i++;
 
 	return (write_number(is_negative, i, buffer, flags, width,
-				precision, size));
+precision, size));
 }
 
 /**
