@@ -73,9 +73,8 @@ int write_number(int is_negative, int ind, char buffer[],
 		extra_ch = '+';
 	else if (flags & F_SPACE)
 		extra_ch = ' ';
-
 	return (write_num(ind, buffer, flags, width, precision,
-				length, padd, extra_ch));
+		length, padd, extra_ch));
 }
 
 /**
@@ -209,7 +208,7 @@ int write_unsgnd(int is_negative, int ind,
  * Return: Number of written chars.
  */
 int write_pointer(char buffer[], int ind, int length,
-		int width, int flags, char padd, char extra_c, int padd_start)
+	int width, int flags, char padd, char extra_c, int padd_start)
 {
 	int i;
 
